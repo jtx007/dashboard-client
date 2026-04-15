@@ -12,6 +12,11 @@ export default defineConfig({
   staged: {
     "*": "vp check --fix",
   },
+  test: {
+    environment: "jsdom",
+    globals: true,
+    setupFiles: ["./src/test/setup.ts"],
+  },
   plugins: [react(), tailwindcss()],
   resolve: {
     alias: {
