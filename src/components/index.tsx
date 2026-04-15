@@ -1,4 +1,4 @@
-import Layout from './layout'
-import { Testimonials } from './testimonials'
+import Layout from "./layout";
+import { Testimonials } from "./testimonials";
 
-export { Layout, Testimonials }
+export { Layout, Testimonials };

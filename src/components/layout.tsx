@@ -1,15 +1,13 @@
-import { Navbar } from "./navbar"
+import { Navbar } from "./navbar";
 
 const Layout = ({ children }: { children: React.ReactNode }) => {
-    return (
-        <div className="p-4">
+  return (
+    <div className="p-4">
+      <Navbar />
 
-            <Navbar />
+      {children}
+    </div>
+  );
+};
 
-            {children}
-
-        </div>
-    )
-}
-
-export default Layout
+export default Layout;
