@@ -29,10 +29,10 @@ jobs:
         run: npm ci
 
       - name: Check (format + lint + type-check)
-        run: npx vp check
+        run: npm run check
 
       - name: Test
-        run: npx vp test
+        run: npm run test
 
       - name: Build
         run: npm run build
